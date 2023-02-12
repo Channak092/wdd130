@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon:ital@1&family=Lato:wght@100&display=swap');
 
-div a {
+#content {
     max-width: 1600px;
     margin: 0 auto;
     color: white;   
@@ -145,6 +145,10 @@ nav a {
 .icon {
     width: 80px;
     padding-top: 10px;
+}
+
+.logo {
+    width: 80px;
 }
 
 .rivers-card, .camping-card, .rapids-card {
