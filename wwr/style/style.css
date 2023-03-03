@@ -63,7 +63,7 @@ nav a:hover{
     z-index: -1;
 }
 
-#her-msg{
+#hero-msg{
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 100px;
@@ -72,6 +72,10 @@ nav a:hover{
     text-align: center;
     font-family: "IM Fell French Canon";
     color: #7f4ffa;
+}
+
+#hero-msg h4 {
+    color: white;
 }
 
 .button-box{
@@ -96,16 +100,16 @@ main section img {
 .home-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    /* grid-template-rows: 1fr 4fr 1fr 1fr 0.5fr 3fr 0.7fr 0.7fr 1fr; */
+    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
 }
 
-.card-img .mountains{
+.card-img, .mountains{
     width: 100%;
 }
 
 .rivers-card{
-    grid-column: 2/4;
-    grid-row: 2/3;
+   grid-column: 2/4;
+   grid-row: 2/3;
 }
 
 .camping-card {
@@ -162,8 +166,13 @@ main section img {
 }
 
 .msg {
-    background-color: #6f7364;
+    /* background-color: #6f7364;
     line-height: 1.5em;
+    padding: 35px;
+    grid-column: 6/10;
+    grid-row: 6/7;
+    box-shadow: 5px 5px 10px #6f7364; */
+    background-color: #6f7364;
     padding: 35px;
     grid-column: 6/10;
     grid-row: 6/7;
@@ -173,7 +182,7 @@ main section img {
 footer {
     background-color: #6f7364;
     padding: 25px 50px;
-    margin: 200px;
+    margin-top: 200px; 
     display: flex;
     justify-content: space-around;
     align-items: center;
