@@ -1,17 +1,19 @@
 #content{
-    max-width: 1600px;
+    max-width: 1200px;
     margin: 0 auto;
-    color: white;
+    color: black;
 }
 
 body{
-
+    
 }
 
 header{
     background-color: rgb(37,96,98);
     display: grid;
     grid-template-columns: 150px auto;
+    border-radius: 20px;
+    height: ;
 }
 
 #logo_link{
@@ -37,7 +39,184 @@ nav a:hover{
     color: #fa4fe0;
 }
 
+.book-now-box {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin: auto;
+    margin-right: 50px;
+}
+
+.book-now {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 18px;
+    font-weight: bold;
+    background: #093a49;
+    width: 120px;
+    height: 20px;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(243, 160, 250, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.book-now:hover {
+    box-shadow: 0 0 20px rgba(254, 249, 151, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
 .logo{
-    width: 80px;
-    border-radius: 25px;
+    width: 70px;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    background-color: cadetblue;
+    margin-top: 25px;
+}
+
+.see_our_farm {
+    display: flex;
+    margin: auto;
+    grid-column: 1 / 2;
+    grid-row-start: 3;
+    text-align: center;
+    place-content: center;
+    flex-wrap: wrap;
+    font-size: 18px;
+    background: #1E90FF;
+    width: 140px;
+    height: 25px;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.see_our_farm:hover, .see_our_farm:focus, .see_our_farm:active {
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.vist_our_shop {
+    display: flex;
+    margin: auto;
+    grid-column: 1 / 2;
+    grid-row-start: 1;
+    text-align: center;
+    place-content: center;
+    flex-wrap: wrap;
+    font-size: 18px;
+    background: #1E90FF;
+    width: 140px;
+    height: 25px;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.vist_our_shop:hover, .vist_our_shop:focus, .vist_our_shop:active {
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.take_tour {
+    display: flex;
+    grid-column: 1 / 2;
+    grid-row-start: 2;
+    margin: auto;
+    text-align: center;
+    place-content: center;
+    flex-wrap: wrap;
+    font-size: 18px;
+    background: #1E90FF;
+    width: 140px;
+    height: 25px;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.take_tour:hover, .take_tour:focus, .take_tour:active {
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.logo_footer {
+    display: flex;
+    width: 120px;
+    padding: 15px;
+    border-radius: 25%;
+    place-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.footer_title {
+    display: flex;
+    grid-column: 2 / 3;
+    grid-row-start: 2;
+    place-content: center;
+    flex-wrap: wrap;
+}
+
+.social {
+    grid-column: 2 / 3;
+    grid-row-start: 3;
+    display: flex;
+    place-content: center;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.facebook, .twitter, .instagram {
+    border-radius: 20%;
+    margin: auto;
+    padding: 5px;
+}
+
+.general_information {
+    grid-column: 3 / 4;
+    grid-row: 1 / 4;
+    display: block;
+    align-items: center;
+    margin: auto;
+    
 }
