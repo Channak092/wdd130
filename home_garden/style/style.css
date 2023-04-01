@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Roboto:wght@300&display=swap');
 #content{
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     color: black;
 }
@@ -37,6 +38,28 @@ nav a{
 nav a:hover{
     background-color: #d2fb60;
     color: #fa4fe0;
+}
+
+.home {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 14px;
+    background: #093a49;
+    width: 120px;
+    height: 20px;
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(243, 160, 250, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
 }
 
 .book-now-box {
@@ -81,19 +104,164 @@ nav a:hover{
     margin-left: 10px;
 }
 
+.our_organic_farm{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    margin: 20px;
+}
+
+.header1 {
+    display: grid;
+    grid-column: 1 / 3;
+    grid-row-start: 1;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Caveat';
+    font-size: 45px;
+    text-align: center;
+    color: #FFC8DD;
+    text-shadow: 3px 2px 3px #f3fe78;
+}
+
+.our_organic_farm_title{
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: #CDB4DB;
+    margin: 0;
+    height: 65px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Caveat';
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    text-shadow: 3px 2px 3px #f3fe78;
+    border-radius: 20px;
+    
+}
+
+.paragraph1 {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    font-family: 'Roboto';
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.fruit_vegetable {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    margin: 20px;
+}
+
+.fruit_vegetable_header {
+    display: grid;
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Caveat';
+    font-size: 45px;
+    text-align: center;
+    color: #FFC8DD;
+    text-shadow: 3px 2px 3px #f3fe78;
+}
+
+.home_banana {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 320px;
+    border-radius: 20px;
+}
+
+.home_vegetable {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    width: 320px;
+    border-radius: 20px;
+}
+
+.home_pineapple_cut {
+    display: grid;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    width: 320px;
+    border-radius: 20px;
+}
+
+.home_vegetable_pot {
+    display: grid;
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    width: 320px;
+    border-radius: 20px;
+}
+
+.home_vegetable_grow {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    width: 320px;
+    border-radius: 20px;
+}
+
+.home_oranges {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    width: 320px;
+    border-radius: 20px;
+}
+
+.home_organic_papaya {
+    display: grid;
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+    width: 320px;
+    border-radius: 20px;
+}
+
+.home_organic_pineapple {
+    display: grid;
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+    width: 320px;
+    border-radius: 20px;
+}
+
+.home_image {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+    width: 680px;
+    height: 430px;
+    border-radius: 7%;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
 footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    /* grid-template-rows: 1fr 1fr 1fr; */
     background-color: cadetblue;
     margin-top: 25px;
 }
 
-.see_our_farm {
+
+.visit_our_farm {
     display: flex;
     margin: auto;
+    padding: 25px;
     grid-column: 1 / 2;
-    grid-row-start: 3;
+    grid-row-start: 1;
     text-align: center;
     place-content: center;
     flex-wrap: wrap;
@@ -113,7 +281,7 @@ footer {
     transition-property: box-shadow, transform;
 }
 
-.see_our_farm:hover, .see_our_farm:focus, .see_our_farm:active {
+.visit_our_farm:hover, .visit_our_farm:focus, .visit_our_farm:active {
     box-shadow: 0 0 20px rgb(0, 0, 0, 0.5);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
@@ -123,7 +291,7 @@ footer {
     display: flex;
     margin: auto;
     grid-column: 1 / 2;
-    grid-row-start: 1;
+    grid-row-start: 3;
     text-align: center;
     place-content: center;
     flex-wrap: wrap;
@@ -179,9 +347,41 @@ footer {
     transform: scale(1.1);
 }
 
-.logo_footer {
+.site_plan {
     display: flex;
-    width: 120px;
+    grid-column: 3 / 4;
+    grid-row-start: 1;
+    margin: auto;
+    text-align: center;
+    place-content: center;
+    flex-wrap: wrap;
+    font-size: 18px;
+    background: #1E90FF;
+    width: 140px;
+    height: 25px;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+
+.site_plan:hover, .tsite_plan:focus, .site_plan:active {
+    box-shadow: 0 0 20px rgb(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.logo_footer {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row-start: 1;
+    width: 80px;
     padding: 15px;
     border-radius: 25%;
     place-content: center;
@@ -195,6 +395,7 @@ footer {
     grid-row-start: 2;
     place-content: center;
     flex-wrap: wrap;
+    text-align: center;
 }
 
 .social {
@@ -214,7 +415,7 @@ footer {
 
 .general_information {
     grid-column: 3 / 4;
-    grid-row: 1 / 4;
+    grid-row: 2 / 4;
     display: block;
     align-items: center;
     margin: auto;
